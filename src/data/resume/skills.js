@@ -9,9 +9,6 @@ export const categories = [
     name: 'Databases',
     color: '#3896e2',
   }, {
-    name: 'Design',
-    color: '#747fff',
-  }, {
     name: 'Frameworks',
     color: '#64cb7b',
   }, {
@@ -21,7 +18,7 @@ export const categories = [
     name: 'Languages',
     color: '#6968b3',
   }, {
-    name: 'Machine Learning',
+    name: 'Deep Learning',
     color: '#e47272',
   }, {
     name: 'Other',
@@ -41,12 +38,12 @@ export const categories = [
 export const skills = [
   {
     title: 'Javascript',
-    compentency: 5,
+    compentency: 3,
     category: ['Web Development', 'Languages', 'Javascript'],
   },
   {
     title: 'Node.JS',
-    compentency: 5,
+    compentency: 3,
     category: ['Web Development', 'Frameworks', 'Javascript'],
   },
   {
@@ -56,12 +53,12 @@ export const skills = [
   },
   {
     title: 'Bash',
-    compentency: 3,
+    compentency: 2,
     category: ['Tools', 'Languages'],
   },
   {
     title: 'Amazon Web Services',
-    compentency: 4,
+    compentency: 1,
     category: ['Web Development', 'Tools'],
   },
   {
@@ -72,11 +69,6 @@ export const skills = [
   {
     title: 'MongoDB',
     compentency: 4,
-    category: ['Web Development', 'Databases'],
-  },
-  {
-    title: 'ElasticSearch',
-    compentency: 3,
     category: ['Web Development', 'Databases'],
   },
   {
@@ -91,58 +83,35 @@ export const skills = [
   },
   {
     title: 'Redis',
-    compentency: 3,
+    compentency: 2,
     category: ['Web Development', 'Databases'],
   },
-  {
-    title: 'Matlab',
-    compentency: 2,
-    category: ['Data Science', 'Machine Learning', 'Languages'],
-  },
-  {
-    title: 'Julia',
-    compentency: 3,
-    category: ['Data Science', 'Machine Learning'],
-  },
+
   {
     title: 'Data Mining',
-    compentency: 3,
-    category: ['Data Science', 'Machine Learning'],
+    compentency: 2,
+    category: ['Data Science', 'Deep Learning'],
   },
   {
     title: 'Express.JS',
-    compentency: 4,
+    compentency: 3.5,
     category: ['Web Development', 'Frameworks', 'Javascript'],
   },
-  {
-    title: 'Koa',
-    compentency: 3,
-    category: ['Web Development', 'Frameworks', 'Javascript'],
-  },
-  {
-    title: 'D3',
-    compentency: 3,
-    category: ['Web Development', 'Frameworks', 'Design', 'Javascript'],
-  },
+  
   {
     title: 'Flask',
-    compentency: 4,
+    compentency: 2.5,
     category: ['Web Development', 'Frameworks', 'Python'],
   },
   {
-    title: 'Product Development',
-    compentency: 3,
+    title: 'Macroeconomics',
+    compentency: 1.5,
     category: ['Other'],
   },
   {
     title: 'Data Analysis',
-    compentency: 3,
-    category: ['Data Science', 'Machine Learning'],
-  },
-  {
-    title: 'Mercurial',
-    compentency: 3,
-    category: ['Tools'],
+    compentency: 2,
+    category: ['Data Science', 'Deep Learning'],
   },
   {
     title: 'Git',
@@ -150,34 +119,34 @@ export const skills = [
     category: ['Tools'],
   },
   {
-    title: 'Arc',
-    compentency: 3,
-    category: ['Tools'],
-  },
-  {
     title: 'Kubernetes',
-    compentency: 3,
+    compentency: 2,
     category: ['Tools'],
   },
   {
-    title: 'Google Cloud Compute',
-    compentency: 3,
+    title: 'Docker',
+    compentency: 2,
     category: ['Tools'],
   },
   {
     title: 'Numpy',
     compentency: 3,
-    category: ['Data Science', 'Machine Learning', 'Python'],
-  },
-  {
-    title: 'Caffe',
-    compentency: 4,
-    category: ['Machine Learning'],
+    category: ['Data Science', 'Deep Learning', 'Python'],
   },
   {
     title: 'Tensorflow',
+    compentency: 3,
+    category: ['Data Science', 'Deep Learning', 'Python'],
+  },
+  {
+    title: 'PyTorch',
     compentency: 4,
-    category: ['Data Science', 'Machine Learning', 'Python'],
+    category: ['Data Science', 'Deep Learning', 'Python'],
+  },
+  {
+    title: 'FastAI',
+    compentency: 2,
+    category: ['Data Science', 'Deep Learning', 'Python'],
   },
   {
     title: 'Jupyter',
@@ -205,64 +174,44 @@ export const skills = [
     category: ['Web Development', 'Languages'],
   },
   {
-    title: 'LESS',
-    compentency: 3,
-    category: ['Web Development', 'Languages'],
-  },
-  {
     title: 'Python',
-    compentency: 5,
+    compentency: 4.5,
     category: ['Languages', 'Python'],
 
   },
   {
     title: 'C++',
-    compentency: 2,
+    compentency: 3.5,
     category: ['Languages'],
   },
   {
-    title: 'Photoshop',
-    compentency: 3,
-    category: ['Design'],
-  },
-  {
-    title: 'Lightroom',
-    compentency: 5,
-    category: ['Design'],
-  },
-  {
-    title: 'InDesign',
-    compentency: 2,
-    category: ['Design'],
-  },
-  {
-    title: 'Wireframing',
+    title: 'Java',
     compentency: 4,
-    category: ['Design', 'Web Development'],
+    category: ['Languages'],
   },
   {
     title: 'Keras',
     compentency: 4,
-    category: ['Machine Learning', 'Python'],
+    category: ['Data Science', 'Machine Learning', 'Python'],
   },
   {
     title: 'Visualization',
-    compentency: 4,
+    compentency: 2,
     category: ['Data Science', 'Javascript'],
   },
   {
     title: 'GraphQL',
-    compentency: 2,
+    compentency: 3,
     category: ['Web Development', 'Databases'],
   },
   {
     title: 'Pandas',
-    compentency: 4,
+    compentency: 3,
     category: ['Data Science', 'Python'],
   },
   {
     title: 'Matplotib',
-    compentency: 4,
+    compentency: 3,
     category: ['Data Science', 'Python'],
   },
   {

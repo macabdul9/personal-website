@@ -8,7 +8,7 @@ const PersonalStats = () => {
 
   const tick = () => {
     const divisor = 1000 * 60 * 60 * 24 * 365.2421897; // ms in an average year
-    const birthTime = new Date('1990-02-05T09:24:00');
+    const birthTime = new Date('1999-04-15T09:24:00');
     setData({
       ...data,
       age: {

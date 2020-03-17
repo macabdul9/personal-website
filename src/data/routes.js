@@ -17,6 +17,10 @@ const data = [
     label: 'Projects',
   },
   {
+    path: '/research',
+    label: 'Research',
+  },
+  {
     path: '/stats',
     label: 'Stats',
   },

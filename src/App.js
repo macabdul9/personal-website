@@ -13,6 +13,7 @@ import Contact from './views/Contact';
 import NotFound from './views/NotFound';
 import Blog from './views/Blog';
 import Merchandise from './views/Merchandise';
+import Research from './views/Research';
 
 import markdown from './static/media/about.md';
 // All of our CSS
@@ -25,20 +26,23 @@ console.log('App.js', markdown);
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Index} />
-        <Route path="/about" component={About} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/stats" component={Stats} />
-        <Route path="/resume" component={Resume} />
-        <Route path="/merchandise" component={Merchandise} />
-        <Route path="/blog" component={Blog} />
-        <Route path="/contact" component={Contact} />
-        {/* Only useful in development mode */}
-        <Route component={NotFound} status={404} />
-      </Switch>
-  </Router>
+    <div style={{'backgroundColor':'CC5C6C7'}}>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Index} />
+          <Route path="/about" component={About} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/research" component={Research} />
+          <Route path="/stats" component={Stats} />
+          <Route path="/resume" component={Resume} />
+          <Route path="/merchandise" component={Merchandise} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/contact" component={Contact} />
+          {/* Only useful in development mode */}
+          <Route component={NotFound} status={404} />
+        </Switch>
+    </Router>
+    </div>
   );
 }
 

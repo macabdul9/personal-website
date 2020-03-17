@@ -18,17 +18,17 @@ const data = [
     label: 'Stars this repository has on github',
     key: 'stargazers_count',
     value: '0',
-    link: 'https://github.com/mldangelo/personal-site/stargazers',
+    link: 'https://github.com/macabdul9/personal-website/stargazers',
   }, {
     label: 'Number of people watching this repository',
     key: 'subscribers_count',
     value: '1',
-    link: 'https://github.com/mldangelo/personal-site/stargazers',
+    link: 'https://github.com/macabdul9/personal-website/stargazers',
   }, {
     label: 'Number of forks',
     key: 'forks',
     value: '0',
-    link: 'https://github.com/mldangelo/personal-site/network',
+    link: 'https://github.com/macabdul9/personal-website',
   }, {
     label: 'Number of spoons',
     value: '0',
@@ -41,18 +41,18 @@ const data = [
     label: 'Open github issues',
     key: 'open_issues_count',
     value: '0',
-    link: 'https://github.com/mldangelo/personal-site/issues',
+    link: 'https://github.com/macabdul9/personal-website/issues',
   }, {
     label: 'Last updated at',
     key: 'pushed_at',
     value: dayjs().format('MMMM D, YYYY'),
-    link: 'https://github.com/mldangelo/personal-site/commits',
+    link: 'https://github.com/macabdul9/personal-website/commits',
   },
   { /* find . | grep ".js" | grep -vE ".min.js|node_modules|.git|.json" |
     xargs -I file cat file | wc -l */
     label: 'Lines of Javascript powering this website',
-    value: '2625',
-    link: 'https://github.com/mldangelo/personal-site/graphs/contributors',
+    value: '~3000',
+    link: 'https://github.com/macabdul9/personal-website',
   },
 ];
 

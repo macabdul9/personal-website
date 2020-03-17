@@ -1,0 +1,24 @@
+[
+    {
+        "id":1,
+        "Title":"Introduction to machine learning",
+        "Author":"Abdul Waheed",
+        "PostedOn":"",
+        "Description":"Introductory article on machine. It explains the very basics of machine learning, various terminalogies in machines and types of tasks in machine learning."
+    },
+    {
+        "id":2,
+        "Title":"KNN Algorithm",
+        "Author":"Abdul Waheed",
+        "PostedOn":"",
+        "Description":"Introduction of K-Nearest Neighbours algorithm. The fundamental algorithm based on Euclidean Distance to classifiy and regress data."
+    },
+    {
+        "id":3,
+        "Title":"Training an OCR model",
+        "Author":"Abdul Waheed",
+        "PostedOn":"",
+        "Description":"A detailed article on how to train an attention based OCR(Optimal Character Recognition) on synthetic data as well natural data. This article also covers the synthetic data generation for OCR model"
+    }
+
+]

@@ -1,40 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
-import ReactMarkdown from 'react-markdown';
 import Main from '../layouts/Main';
+import posts from '../data/posts/posts.json';
+import Cell from '../components/Blog/Cell';
 
-import markdown from '../static/media/about.md';
+class Blog extends Component {
+  render() {
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+    ];
+    const blog = posts.map(post =>{
+        return <Cell title={post.Title} author={post.Author} postedOn={monthNames[(new Date()).getMonth()] +', ' +(new Date()).getFullYear()} description={post.Description}></Cell>
+    });
 
-
-const count = markdown.split(/\s+/)
-  .map((s) => s.replace(/\W/g, ''))
-  .filter((s) => s.length).length;
-
-console.log('About.js', count);
-
-// Make all hrefs react router links
-const LinkRenderer = ({ ...children }) => <Link {...children} />;
-
-const Blog = () => (
-  <Main>
-    <Helmet title="About" />
-    <article className="post" id="about">
-      <header>
-        <div className="title">
-          <h2><Link to="/about">About Me</Link></h2>
-          <p>(in about {count} words)</p>
-        </div>
-      </header>
-      <ReactMarkdown
-        source={markdown}
-        renderers={{
-          Link: LinkRenderer,
-        }}
-        escapeHtml={false}
-      />
-    </article>
-  </Main>
-);
+    return (
+      <div>
+        <Main>
+          <Helmet title="About" />
+          {blog}
+        </Main>
+      </div>
+    )
+  }
+}
 
 export default Blog;

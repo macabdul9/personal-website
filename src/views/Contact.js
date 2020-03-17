@@ -16,22 +16,18 @@ const validateText = (text) => {
 };
 
 const messages = [
-  'hi',
-  'hello',
-  'hola',
-  'you-can-email-me-at-literally-anything! Really',
-  'well, not anything. But most things',
-  'like-this',
-  'or-this',
-  'but not this :(  ',
-  'you.can.also.email.me.with.specific.topics.like',
-  'just-saying-hi',
-  'please-work-for-us',
-  'help',
-  'admin',
-  'or-I-really-like-your-website',
-  'I\'ll-stop-distracting-you-now',
-  'thanks',
+  'abdulwaheed1513@gmail.com',
+  'e.abdul@protonmail.com',
+  'abdulwaheed1513@gmail.com',
+  'e.abdul@protonmail.com',
+  'abdulwaheed1513@gmail.com',
+  'e.abdul@protonmail.com',
+  'abdulwaheed1513@gmail.com',
+  'e.abdul@protonmail.com',
+  'abdulwaheed1513@gmail.com',
+  'e.abdul@protonmail.com',
+  'abdulwaheed1513@gmail.com',
+  'e.abdul@protonmail.com',
 ];
 
 const useInterval = (callback, delay) => {
@@ -87,16 +83,16 @@ const Contact = () => {
           </div>
         </header>
         <div className="email-at">
-          <p>Feel free to get in touch. You can email me at: </p>
+          <p>If you have some feedback about this site or want to talk about football, data or data about football, feel free to get in touch. You can email me at: </p>
           <div
             className="inline-container"
             style={validateText(message) ? {} : { color: 'red' }}
             onMouseEnter={() => setIsActive(false)}
             onMouseLeave={() => (idx < messages.length) && setIsActive(true)}
           >
-            <a href={validateText(message) ? `mailto:${message}@mldangelo.com` : ''}>
+            <a href={validateText(message) ? `mailto:${message}` : ''}>
               <span>{message}</span>
-              <span>@mldangelo.com</span>
+              <span></span>
             </a>
           </div>
         </div>

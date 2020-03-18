@@ -49,8 +49,8 @@ const useInterval = (callback, delay) => {
 };
 
 const Contact = () => {
-  const hold = 50; // ticks to wait after message is complete before rendering next message
-  const delay = 50; // tick length in mS
+  const hold = 60; // ticks to wait after message is complete before rendering next message
+  const delay = 60; // tick length in mS
 
   const [idx, updateIter] = useState(0); // points to current message
   const [message, updateMessage] = useState(messages[idx]);
@@ -76,7 +76,7 @@ const Contact = () => {
   return (
     <Main>
       <Helmet title="Contact" />
-      <article className="post" id="contact">
+      <article className="post" id="contact" style={{'height':'100%'}}>
         <header>
           <div className="title">
             <h2><Link to="/contact">Contact</Link></h2>

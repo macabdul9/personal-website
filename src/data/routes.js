@@ -29,10 +29,6 @@ const data = [
     label: 'Blog',
   },
   {
-    path: '/merchandise',
-    label: 'Merchandise',
-  },
-  {
     path: '/contact',
     label: 'Contact',
   }

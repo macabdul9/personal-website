@@ -4,6 +4,8 @@ import Helmet from 'react-helmet';
 import Main from '../layouts/Main';
 import posts from '../data/posts/posts.json';
 import Cell from '../components/Blog/Cell';
+import FullPost from '../components/Blog/FullPost';
+
 
 class Blog extends Component {
   render() {

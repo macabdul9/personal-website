@@ -18,7 +18,9 @@ class About extends Component {
   state = {
     about: null,
   }
-
+  getSource(){
+    return this.props.source
+  }
   componentDidMount() {
     fetch(source)
       .then(res => res.text())

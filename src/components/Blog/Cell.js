@@ -27,7 +27,7 @@ class Cell extends Component {
               <Card.Footer className="text-muted">2 days ago</Card.Footer>
             </Card> */}
             <Link>
-              <Card hoverable className='mt-1'>
+              <Card hoverable="true" className='mt-1'>
                   <Card.Header as="h5">Featured</Card.Header>
                   <Card.Body>
                     <Card.Title>{this.props.title}</Card.Title>

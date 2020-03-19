@@ -9,12 +9,12 @@ import source from '../data/about.md';
 
 class About extends Component {
 
-  constructor(){
-    super()
-    // Make all hrefs react router links
-    const LinkRenderer = ({ ...children }) => <Link {...children} />;
-
-  }
+  // constructor(){
+  //   super()
+  //   // Make all hrefs react router links
+  //   // const LinkRenderer = ({ ...children }) => <Link {...children} />;
+  // }
+  
   state = {
     about: null,
   }
@@ -30,8 +30,6 @@ class About extends Component {
 
   render() {
     const {about} = {...this.state};
-    console.log(String(about).length
-    );
 
     return (
       <>

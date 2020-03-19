@@ -15,14 +15,10 @@ import NotFound from './views/NotFound';
 import Blog from './views/Blog';
 import Merchandise from './views/Merchandise';
 import Research from './views/Research';
-
-import markdown from './static/media/about.md';
 // All of our CSS
 import './static/css/main.scss';
-import data from './data/github';
 
 
-console.log('App.js', markdown);
 
 
 function App() {

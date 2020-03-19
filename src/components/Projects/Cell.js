@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
-import url from 'url';
+// import url from 'url';
 import classes from './Cell.module.css';
 
 const Cell = ({ data }) => (

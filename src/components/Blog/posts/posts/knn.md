@@ -1,10 +1,10 @@
-###2.0 &nbsp;&nbsp;&nbsp;KNN (K-nearest neighbours)
+### 2.0 &nbsp;&nbsp;&nbsp;KNN (K-nearest neighbours)
 KNN is a classic supervised learning algorithm that is used for both classification and regression problems. However, it is primarily used for classification problems. KNN is based on k nearest neighbors where k is an integer.
 
 Suppose our data which has n features are scattered into [euclidean space](https://en.wikipedia.org/wiki/Euclidean_space) which might look like below if n=2.
-![knn](../../assets/knn/knn.png)
+![knn](knn.png)
 
-Let's say red circles belong to class 1 and green rechtangles belong to class 0 and they can be mathematically represented as (combinally the're called training data):
+Let's say red circles belong to class 1 and green rectangles belong to class 0 and they can be mathematically represented as (collectively they're called training data):
 X<sub>G</sub> = [(a1, b1), (a2, b2), (a3, b3)]
 X<sub>B</sub> = [(a1, b1), (a2, b2), (a3, b3)]
 
@@ -12,23 +12,23 @@ Now If I ask what is the class of a data point which is represented by the blue 
 Most likely your (mine as well) answer would be class 1,
 Now I ask why?
 The intuitive answer would be because it is closer to class 1.
-right answer, congratulations! that's it that's the KNN.
+Perfect, right answer, congratulations! that's it that's the KNN.
 In other words, we can say that the majority of the neighbors of data point (a, b) belong to class 1.
 In KNN k is the number of neighbors we have to consider for predicting the class of a data point.
 Now the problem arises how we will evaluate the k-neighbors and the solution to this, we will calculate the distance of each training point from input data(test data we say) and we will take k points which are nearest to the test data.
 In case our data has two features we calculate the by:
-![distance2d](assets/knn/2d.png)
+![distance2d](2d.png)
 But when our data will have n features we will have to calculate the [euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance)
-![distancend](assets/knn/nd.png)
-A simple python script using numpy to calculate the eucildean distance:
-numpy.sum((a - b)**2)**.5
+![distancend](nd.png)
+A simple python script using numpy to calculate the euclidean distance:
+nNumPysum((a - b)**2)**.5
 
 #### Algorithm:
 
 - calculate the distance of each training point from test data
 - sort them into ascending order. 
 - take the top k.
-- find the majority class and that will be class for for the given test data.
+- find the majority class and that will be class for the given test data.
 - repeat the same for all test data.
 
 #### Source Code
@@ -53,7 +53,7 @@ numpy.sum((a - b)**2)**.5
 
 - Don't forget to import numpy
 
-Congratulations ! Happy Coding.
+Congratulations! Happy Coding.
 
 
 

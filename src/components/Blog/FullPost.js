@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactMarkdown from 'react-markdown';
 import Helmet from 'react-helmet';
 import Main from '../../layouts/Main';
 import marked from 'marked';
@@ -8,10 +7,8 @@ export class FullPost extends Component {
     state = {
         post: null,
     }
-    
     componentDidMount() {
-    console.log(`${this.props.source}`);
-    const mdFile = require(`${this.props.source}`);
+        const mdFile = require(`./posts/posts/${this.props.source}`);
         fetch(mdFile)
         .then(response => {
             return response.text()

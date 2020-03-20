@@ -10,9 +10,7 @@ import markdown from '../static/media/about.md';
 const count = markdown.split(/\s+/)
   .map((s) => s.replace(/\W/g, ''))
   .filter((s) => s.length).length;
-
-console.log('About.js', count);
-
+  
 // Make all hrefs react router links
 const LinkRenderer = ({ ...children }) => <Link {...children} />;
 

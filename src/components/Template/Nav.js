@@ -22,7 +22,7 @@ const Nav = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>Hi, I&apos;m Abdul Waheed. I like building things.
-            I am a junior undergrad (Computer Science and Engineering) at Maharaja Agrasen Institute of Technology, New Delhi India.
+            I am CSE undergrad at Maharaja Agrasen Institute of Technology, New Delhi India.
       </p>
       <ul className="actions">
         <li>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-    BrowserRouter as Router, Switch, Route,
+    Switch, Route,
   } from 'react-router-dom';
 import posts from '../data/posts/posts';
 import FullPost  from '../components/Blog/FullPost';
@@ -9,7 +9,6 @@ import FullPost  from '../components/Blog/FullPost';
 class FullPostsRouters extends Component {
     
     render() {
-        let count = 0;
         const fullViewPosts = posts.map(post => {
             // console.log('FullPostRouters.js', post['id'], post['Source']);
             return (

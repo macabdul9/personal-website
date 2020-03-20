@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Table from './Table';
 // import data from '../../data/github';
-import dayjs from 'dayjs';
+// import dayjs from 'dayjs';
 import { connect } from 'react-redux';
 import * as actions from '../../store/actions/index';
 import axios from 'axios';

@@ -29,19 +29,23 @@ class Stats extends Component {
     const {gitData} = {...this.state};
     const data = [
       {
+        label: 'Number of visitors',
+        value: 0,
+      },
+      {
         label: 'Stars this repository has on github',
         key: 'stargazers_count',
         value: String(gitData["stargazers_count"]),
         link: 'https://github.com/macabdul9/personal-website/stargazers',
       }, {
         label: 'Number of people watching this repository',
-        key: 'subscribers_count',
-        value: String(gitData["subscribers_count"]),
+        key: 'watchers',
+        value: String(gitData["watchers"]),
         link: 'https://github.com/macabdul9/personal-website/stargazers',
       }, {
         label: 'Number of forks',
         key: 'forks',
-        value: String(gitData["fork"]),
+        value: String(gitData["forks"]),
         link: 'https://github.com/macabdul9/personal-website',
       }, {
         label: 'Number of spoons',

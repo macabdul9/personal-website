@@ -14,7 +14,6 @@ class About extends Component {
   //   // Make all hrefs react router links
   //   // const LinkRenderer = ({ ...children }) => <Link {...children} />;
   // }
-  
   state = {
     about: null,
   }
@@ -30,7 +29,6 @@ class About extends Component {
 
   render() {
     const {about} = {...this.state};
-
     return (
       <>
         <Main>

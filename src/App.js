@@ -17,9 +17,9 @@ import Merchandise from './views/Merchandise';
 import Research from './views/Research';
 // All of our CSS
 import './static/css/main.scss';
-
-
-
+// import FullPostsRouters from './views/FullPostRouters';
+import FullPost from './components/Blog/FullPost';
+import posts from './data/posts/posts'
 
 function App() {
   return (
@@ -34,8 +34,13 @@ function App() {
           <Route path="/resume" component={Resume} />
           <Route path="/merchandise" component={Merchandise} />
           <Route path="/blog" component={Blog} />
+          <Route exact path="/blog/:id" component={Blog} />
           <Route path="/contact" component={Contact} />
-          {/* Only useful in development mode */}
+          {posts.map(post => {
+            console.log('App.js', post['id'], post['Source']);
+            return <Route exact path={'/blog/'+pathname:post['id']}} component={(props) => <FullPost {...props} source={post['Source']}/>}/>
+          })}
+          
           <Route component={NotFound} status={404} />
         </Switch>
     </Router>

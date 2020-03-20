@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 // import classes from './Cell.module.css';
 import {Card, Button} from 'react-bootstrap';
-import {Link} from '@material-ui/core';
+import {Link} from 'react-router-dom';
 
 class Cell extends Component {
+  
   render() {
     return (
         <div className="cell-container">
@@ -26,7 +27,7 @@ class Cell extends Component {
               </Card.Body>
               <Card.Footer className="text-muted">2 days ago</Card.Footer>
             </Card> */}
-            <Link>
+            <Link to={{pathname: this.props.id}}>
               <Card hoverable="true" className='mt-1'>
                   <Card.Header as="h5">Featured</Card.Header>
                   <Card.Body>

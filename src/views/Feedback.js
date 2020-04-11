@@ -2,13 +2,14 @@ import React from 'react';
 import Main from '../layouts/Main';
 import Helmet from 'react-helmet';
 
-const Contact = () => {
+
+const Feedback = () => {
   return (
     <Main>
-      <Helmet title='Contact'/>
-      <h1>This is /contact route page</h1>
+        <Helmet title="Feedback" />
+        <h1>This /feedback route page</h1>
     </Main>
   )
 }
 
-export default Contact
+export default Feedback

@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 // import ReactGA from 'react-ga';
 
 import Header from '../components/Template/Header';
-import Nav from '../components/Template/Nav';
+// import Nav from '../components/Template/Nav';
 
 // if (NODE_ENV === 'production') {
 //   ReactGA.initialize(GA_ID);
@@ -28,12 +28,11 @@ class Main extends Component {
   render() {
     return (
       <div id="wrapper">
-        <Helmet titleTemplate="%s | Abdul Waheed" defaultTitle="Abdul Waheed" />
+        <Helmet titleTemplate="%s | RFD" defaultTitle="Abdul Waheed" />
         <Header />
         <div id="main">
           {this.props.children}
         </div>
-         {!this.props.fullPage && <Nav />}
       </div>);
   }
 }

@@ -24,6 +24,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Index} />
+          <Route exact path='/home' component={Index}/>
           <Route path="/about" component={About} />
           <Route path="/eda" component={EDA} />
           <Route path="/readme" component={Readme} />

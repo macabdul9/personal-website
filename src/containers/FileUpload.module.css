@@ -1,0 +1,16 @@
+.Top{
+    align-items: center;
+}
+.Form{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+}
+.Button{
+    height: auto;
+    width: auto;
+    margin-top: auto;
+    border-radius: 20px;
+}

@@ -6,6 +6,20 @@ import Main from '../layouts/Main';
 import source from '../data/about.md';
 
 class About extends Component {
+
+  state = {
+    about: null,
+  }
+  getSource(){
+    return this.props.source
+  }
+  componentDidMount() {
+    fetch(source)
+      .then(res => res.text())
+      .then(about => this.setState((state) => ({ ...state, about})))
+      .catch((err) => console.error(err));
+  }
+
   render() {
     const {about} = {...this.state};
     return (

@@ -1,7 +1,7 @@
 const data = [
   {
     path: '/',
-    label: 'Reddit-Flair-Detector',
+    label: 'Abdul Waheed',
     index: true,
   },
   {
@@ -9,20 +9,24 @@ const data = [
     label: 'About',
   },
   {
-    path: '/eda',
-    label: 'Eploratory Data Analysis',
+    path: '/resume',
+    label: 'Resume',
   },
   {
-    path: '/readme',
-    label: 'README.md',
+    path: '/projects',
+    label: 'Projects',
   },
   {
-    path: '/report',
-    label: 'Report',
+    path: '/research',
+    label: 'Research',
   },
   {
-    path: '/feedback',
-    label: 'Feedback',
+    path: '/stats',
+    label: 'Stats',
+  },
+  {
+    path: '/blog',
+    label: 'Blog',
   },
   {
     path: '/contact',

@@ -5,8 +5,8 @@ const data = [
     index: true,
   },
   {
-    path: '/home',
-    label: 'Home',
+    path: '/about',
+    label: 'About',
   },
   {
     path: '/eda',
@@ -23,10 +23,6 @@ const data = [
   {
     path: '/feedback',
     label: 'Feedback',
-  },
-  {
-    path: '/about',
-    label: 'About',
   },
   {
     path: '/contact',

@@ -5,7 +5,7 @@ import Hamburger from './Hamburger';
 import routes from '../../data/routes';
 
 const Header = () => (
-  <header id="header">
+  <header id="header" style={{"backgroundColor":"#d5d0d0"}}>
     <h1 className="index-link">
       {routes.filter((l) => l.index).map((l) => (
         <Link key={l.label} to={l.path}>{l.label}</Link>

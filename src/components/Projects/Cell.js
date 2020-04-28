@@ -11,7 +11,7 @@ const Cell = ({ data }) => (
         <h2><a href={data.link} target="_blank" rel="noopener noreferrer">{data.title}</a></h2>
         <time className="published">{dayjs(data.date).format('MMMM, YYYY')}</time>
       </header>
-      <p className={classes.Cell}>{data.desc}</p>
+      <p className={classes.Cell} align="justify">{data.desc}</p>
     </article>
   </div>
 );
